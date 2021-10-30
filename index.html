@@ -1493,14 +1493,14 @@
             .duration(600)
             .ease("linear")
             .text(function () {
-              return d.name_en + "\n, " + d.title_en;
+              return d.name_en;
             });
           d3.select(".quote-group")
             .transition()
             .duration(600)
             .ease("linear")
             .text(function () {
-              return "" + d.org_en + "";
+              return d.title_en + "\n, " + d.org_en;
             });
         })
         .on("mouseleave", function (d) {
